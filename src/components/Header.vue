@@ -1,5 +1,3 @@
 <template>
-  <header>
-    <p>this is header</p>
-  </header>
+  <div class="border-8 border-red-500"></div>
 </template>
