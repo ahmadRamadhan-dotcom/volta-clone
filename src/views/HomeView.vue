@@ -1,3 +1,5 @@
 <template>
-  <div id="main"></div>
+  <div id="main">
+    <BannerHero />
+  </div>
 </template>

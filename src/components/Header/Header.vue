@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-center">
+  <header class="flex justify-center bg-gray-900">
     <HeaderContainer>
       <HeaderLogo />
       <HeaderList :list-data="links" />
