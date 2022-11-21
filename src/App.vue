@@ -1,6 +1,8 @@
 <template>
-  <Header />
-  <RouterView />
+  <div class="bg-gray-900 h-screen">
+    <Header />
+    <RouterView />
+  </div>
 </template>
 
 <script setup>
