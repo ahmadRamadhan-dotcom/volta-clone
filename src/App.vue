@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h1>
-      hai, welcome to amazing website using vue, tailwindcss and vue router
-    </h1>
-  </div>
+  <Header />
+  <RouterView />
 </template>
+
+<script setup>
+import { RouterView } from "vue-router";
+</script>
