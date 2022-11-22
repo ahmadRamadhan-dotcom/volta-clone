@@ -13,7 +13,7 @@
         :key="index"
         :to="data.to"
         to="/changelog"
-        class="text-gray-500 hover:text-[#fafafa] text-sm font-medium"
+        class="u-text-gray-500 hover:text-[#fafafa] text-sm font-medium"
       >
         {{ data.name }}
       </router-link>
@@ -33,3 +33,9 @@ const showMenu = () => {
   openMenu.value = !openMenu.value;
 };
 </script>
+
+<style scoped>
+.u-text-gray-500 {
+  color: rgb(161 161 170);
+}
+</style>

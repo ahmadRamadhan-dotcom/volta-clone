@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 h-screen">
+  <div class="backgrundGrey min-h-screen">
     <Header />
     <RouterView />
   </div>
@@ -8,3 +8,9 @@
 <script setup>
 import { RouterView } from "vue-router";
 </script>
+
+<style>
+.backgrundGrey {
+  background-color: rgb(24 24 27);
+}
+</style>
