@@ -9,3 +9,12 @@
 .backgroundGrey {
   background-color: rgb(24 24 27);
 }
+
+#nprogress .bar {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(26, 98, 255) 0%,
+    rgb(168, 85, 247) 50%,
+    rgb(236, 72, 153) 100%
+  );
+}

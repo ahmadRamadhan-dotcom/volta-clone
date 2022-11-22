@@ -6,5 +6,6 @@
     <BannerHero />
     <Main />
     <AlwaysSync />
+    <PowerfullCommand />
   </div>
 </template>
