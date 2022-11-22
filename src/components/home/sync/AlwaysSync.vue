@@ -2,7 +2,7 @@
   <div id="sync_container" class="flex justify-center mt-14">
     <div
       id="sync_wrapper"
-      class="bg-no-repeat bg-[url('/background.svg')] rounded-lg bg-[#27272a40] bg-cover bg-[center_bottom] flex justify-center w-11/12 lg:w-[94%] xl:w-[1220px] h-[20em] md:h-[18em] lg:h-[22em] xl:h-[28em]"
+      class="bg-no-repeat bg-[url('/background.svg')] shadow-xl rounded-lg bg-[#27272a40] bg-cover bg-[center_bottom] flex justify-center w-11/12 lg:w-[94%] xl:w-[1220px] h-[20em] md:h-[18em] lg:h-[22em] xl:h-[28em]"
     >
       <div
         class="grid lg:grid-cols-2 w-full place-content-center place-items-center"

@@ -13,6 +13,8 @@
         :key="index"
         :to="data.to"
         to="/changelog"
+        active-class="active"
+        exact-active-class="exact-active"
         class="u-text-gray-500 text-sm font-medium"
       >
         {{ data.name }}
@@ -39,6 +41,9 @@ const showMenu = () => {
   color: rgb(161 161 170);
 }
 
+.active {
+  color: #fafafa;
+}
 .u-text-gray-500:hover {
   color: #fafafa;
 }

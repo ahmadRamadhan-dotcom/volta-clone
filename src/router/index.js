@@ -27,8 +27,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  linkActiveClass: "active",
+  linkExactActiveClass: "exact-active",
 });
-
 
 router.beforeResolve((to, from, next) => {
   // If this isn't an initial page load.
