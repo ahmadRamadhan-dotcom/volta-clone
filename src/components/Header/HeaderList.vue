@@ -1,7 +1,7 @@
 <template>
   <div
     id="list"
-    class="order-first lg:order-2 w-1/3 xl:w-1/3 grid xl:flex pl-4 xl:gap-10"
+    class="order-first z-[999] lg:order-2 w-1/3 xl:w-1/3 grid xl:flex pl-4 xl:gap-10"
   >
     <MenuButton :open-menu="openMenu" :show-menu="showMenu" />
     <span
@@ -13,7 +13,7 @@
         :key="index"
         :to="data.to"
         to="/changelog"
-        class="u-text-gray-500 hover:text-[#fafafa] text-sm font-medium"
+        class="u-text-gray-500 text-sm font-medium"
       >
         {{ data.name }}
       </router-link>
@@ -37,5 +37,9 @@ const showMenu = () => {
 <style scoped>
 .u-text-gray-500 {
   color: rgb(161 161 170);
+}
+
+.u-text-gray-500:hover {
+  color: #fafafa;
 }
 </style>
