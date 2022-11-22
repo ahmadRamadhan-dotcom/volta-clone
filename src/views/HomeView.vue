@@ -5,5 +5,6 @@
   >
     <BannerHero />
     <Main />
+    <AlwaysSync />
   </div>
 </template>
