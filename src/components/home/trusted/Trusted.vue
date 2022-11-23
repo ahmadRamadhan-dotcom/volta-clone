@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-20 w-[94%] xl:w-[700px] 2xl:w-[800px]">
+  <div class="mx-auto mt-20 w-[94%] xl:w-[800px] z-[30]">
     <p class="text-[#fafafa] font-bold text-3xl text-center">
       Trusted by open-source communities
     </p>

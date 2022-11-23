@@ -10,7 +10,7 @@
     </p>
   </div>
   <div
-    class="w-11/12 xl:w-[1220px] grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto mt-10"
+    class="w-11/12 xl:w-[1220px] grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto mt-10 z-[50]"
   >
     <div
       v-for="(feature, index) in features"
