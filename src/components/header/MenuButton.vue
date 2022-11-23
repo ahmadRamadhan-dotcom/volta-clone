@@ -1,11 +1,11 @@
 <template>
   <button
     type="button"
-    :class="openMenu ? 'mt-32' : 'mt-10'"
+    :class="showList ? 'mt-32' : 'mt-10'"
     class="text-[#fafafa] -translate-y-5 w-10 lg:hidden"
-    @click="showMenu"
+    @click="openMenu"
   >
-    <span :class="openMenu ? 'hidden' : 'block'">
+    <span :class="showList ? 'hidden' : 'block'">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,7 +24,7 @@
         ></path>
       </svg>
     </span>
-    <span :class="openMenu ? 'block' : 'hidden'">
+    <span :class="showList ? 'block' : 'hidden'">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -47,8 +47,13 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  openMenu: Boolean,
-  showMenu: Function,
-});
+import { storeToRefs } from "pinia";
+import { useHeaderStore } from "../../store/useHeaderStore";
+const main = useHeaderStore();
+
+const { showList } = storeToRefs(main);
+
+const openMenu = () => {
+  showList.value = !showList.value;
+};
 </script>

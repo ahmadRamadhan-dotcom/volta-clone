@@ -3,9 +3,9 @@
     id="list"
     class="order-first z-[999] lg:order-2 w-1/3 xl:w-1/3 grid xl:flex pl-4 xl:gap-10"
   >
-    <MenuButton :open-menu="openMenu" :show-menu="showMenu" />
+    <MenuButton />
     <span
-      :class="openMenu ? 'block' : 'hidden lg:flex'"
+      :class="showList ? 'block' : 'hidden lg:flex'"
       class="grid gap-y-4 lg:gap-10"
     >
       <router-link
@@ -24,15 +24,17 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { storeToRefs } from "pinia";
+import { useHeaderStore } from "../../store/useHeaderStore";
+const main = useHeaderStore();
+
+const { showList } = storeToRefs(main);
+
 const props = defineProps({
   listData: Array,
 });
-
-const openMenu = ref(false);
-
-const showMenu = () => {
-  openMenu.value = !openMenu.value;
+const openMenu = () => {
+  showList.value = !showList.value;
 };
 </script>
 
