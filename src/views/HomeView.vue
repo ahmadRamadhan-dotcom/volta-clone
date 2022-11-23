@@ -7,5 +7,6 @@
     <Main />
     <AlwaysSync />
     <PowerfullCommand />
+    <MoreFeature />
   </div>
 </template>

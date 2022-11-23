@@ -1,7 +1,7 @@
 <template>
   <div
     id="logo"
-    class="w-1/3 sm:flex sm:justify-center lg:justify-start lg:order-first xl:w-1/3"
+    class="w-1/3 z-[99] sm:flex sm:justify-center lg:justify-start lg:order-first xl:w-1/3"
   >
     <router-link to="/" class="text-white flex gap-2"
       ><svg
