@@ -8,5 +8,6 @@
     <AlwaysSync />
     <PowerfullCommand />
     <MoreFeature />
+    <Trusted />
   </div>
 </template>
