@@ -1,7 +1,7 @@
 <template>
   <div class="mt-24 flex justify-center">
     <div
-      class="relative xl:w-[1220px] grid grid-cols-2 bg-[#27272a40] place-content-center place-items-center shadow-xl rounded-lg xl:h-[27em]"
+      class="relative w-11/12 xl:w-[1220px] grid lg:grid-cols-2 bg-[#27272a40] place-content-center place-items-center shadow-xl rounded-lg h-[20em] lg:h-[27em]"
     >
       <svg
         width="1072"
@@ -56,8 +56,8 @@
         </defs>
       </svg>
       <div class="w-11/12 xl:h-[25em] overflow-auto"></div>
-      <div class="w-9/12">
-        <span class="text-[#fafafa] font-bold xl:text-4xl"
+      <div class="w-10/12 lg:w-9/12">
+        <span class="text-[#fafafa] font-bold text-3xl sm:text-4xl"
           >Powerful command menu
         </span>
         <p class="mt-4 font-normal text-[#a1a1aa] text-lg">
